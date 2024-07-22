@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Application</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" id="search-box" placeholder="Search.." name="search">
+                <button type="button"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="task-manager">
+            <div class="titlecont">
+            <h2>Task Manager <img src="logo.jpg"> </h2>
+            <button id="sort-button">Sort by Date</button>
+        </div>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your task">
+
+
+                <input type="date" id="input-date">
+
+                <select id="category-select">
+                    <option value="Work">Work</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Shopping">Shopping</option>
+                </select>
+
+                <button onclick="addTask()">Add</button>
+
+
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <style>
+    .descc{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+    </style>
+</body>
+
+</html>
